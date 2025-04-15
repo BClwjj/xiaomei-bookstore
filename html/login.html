@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>登录 </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+    <!-- 注册页面头部 -->
+    <div class="register_wrap">
+        <div class="register_content register_content2 clear">
+            <div class="register_operate" id="__ddnav_menu">
+                <p id="nickname">欢迎光临时代网，请
+                    <a name="ddnav_login" href="./login.html" target="_self" class="login_link">登录</a>
+                    <a name="ddnav_register" href="./register.html" target="_self" class="login_link">免费注册</a>
+                </p>
+            </div>
+            <div class="register_logo">
+                <a href="../index.html" title="返回首页" name="ddnav_logo">
+                    <img src="../images/logo.png" alt="" style="height: 80px; width: 180px;">
+                </a>
+            </div>
+            <div class="banner clear">
+                <div class="bannerHeader fr sprite"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- /注册页面头部 -->
+    <!-- 登录页面主体 -->
+    <div class="registerMian">
+        <form action="../index.html" method="post" id="register_form" name="form">
+            <div id="bd">
+                <div class="register_box">
+                    <div class="head">
+                        <a tabindex="11" class="more" name="help" href="">登录帮助</a>
+                        <p class="coupon_words">
+                            <label>完成手机/邮箱验证登录，可以选商品实现购物！ </label>
+                        </p>
+                        <h3> 登录账号</h3>
+                    </div>
+                    <div class="body">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                            <div id="login" class="clear">
+                                <div class="loginFace fr">
+                                    <div class="loginHeader clear">
+                                        <h2>登陆小美</h2>
+                                        <span class="login_help fr">登陆帮助</span>
+                                        <span class="metTra fr">遇到困难？</span>
+                                    </div>
+                                    <div class="loginName">
+                                        <label for="logname" class="login_name">
+                                            <span><img src="../images/login_name.jpg" alt=""
+                                                    style="  height: 35px; margin-left: -1px; width: 36px;"></span></label>
+                                        <Input type=text id="logname" placeholder="昵称/手机号">
+                                    </div>
+                                    <div class="loginPaw">
+                                        <label for="password" class="login_paw">
+                                            <span><img src="../images/login_pwd.jpg" alt=""></span></label>
+                                        <Input type=password id="password" placeholder="密码">
+                                    </div>
+                                    <div class="login_links clear">
+                                        <a class="fl" href=""><span class="tipS">忘记登陆密码？</span></a>
+                                        <a href="./register.html"> <span style="margin-left: 130px;">免费注册</span></a>
+                                    </div>
+                                    <Input type=submit name="g" value="登录" >
+                            
+                                    <div class="backcontent ">
+                                        <p>合作网站账号登陆<span class="cor7 padl15">
+                                            </span></p>
+                                        <p class="link_text">
+                                            <a href=""><span>QQ</span></a>
+                                            <a href=""><span>新浪微博</span></a>
+                                            <a href=""><span>微信账号</span></a>
+                                            <a href=""><span>豆瓣账号</span></a>
+                                            <a href=""><span>人人</span></a>
+                                            <a href=""><span>搜狐</span></a>
+                                            <a href=""><span>网易邮箱</span></a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById("register_form").addEventListener("submit", function (event) {
+    event.preventDefault(); // 阻止表单默认提交行为
+
+    // 手机号码验证
+    var phone = document.getElementById("logname").value;
+    var phoneRegex = /^1[3-9]\d{9}$/;
+    if (!phoneRegex.test(phone)) {
+        alert("请输入有效的手机号码。");
+        return false;
+    }
+
+    // 密码验证
+    var password = document.getElementById("password").value;
+    var passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{6,20}$/;
+    if (!passwordRegex.test(password)) {
+        alert("密码必须包含字母和数字，并且长度在6到20位之间。");
+        return false;
+    }
+
+    // 如果所有验证都通过，则可以提交表单
+    alert('登录成功！');
+    this.submit();
+})
+    </script>
+    <!-- 登录页面主体 -->
+
+    <div id="footer" class="padb10">
+        <p class="padt5 textc cor2 lh20">
+            版权所有&copy;广东科技学院2022级软件工程专业小美&nbsp;&nbsp;
+            联系电话：12345678　邮箱：3289824220@qq.com
+        </p>
+    </div>
+</body>
+
+</html>

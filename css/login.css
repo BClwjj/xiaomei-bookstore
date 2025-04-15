@@ -1,0 +1,151 @@
+.loginFace {
+    position: relative;
+    width: 360px;
+    margin: 18px 20px 40px 120px ;
+    padding: 10px 0;
+    text-align: center;
+    border: 2px solid #f1f1f1;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 1px 1px 1px #f1f1f1;
+  }
+  
+  .loginHeader {
+    width: 302px;
+    margin: 0 auto;
+  }
+  
+  #login h2 {
+    float: left;
+    height: 30px;
+    font: 20px/30px "microsoft yahei", "宋体";
+    cursor: pointer;
+    text-align: center;
+    color: #666;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .metTra,
+  .login_help {
+    display: inline-block;
+    height: 30px;
+    font: 12px/30px "microsoft yahei", "宋体";
+    padding-left: 5px;
+  }
+  
+  .login_help {
+    color: #FF3328;
+    margin-left: 100px;
+  }
+  
+  #login form {
+    display: block;
+    width: 360px;
+  }
+  
+  #login .loginName,
+  #login .loginPaw,
+  #login .login_links {
+    position: relative;
+    width: 302px;
+    margin: 20px auto 0;
+    border: 1px solid #FFF;
+  }
+  
+  #login .login_name,
+  #login .login_paw {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #bdbdbd;
+  }
+  
+  #login input {
+    overflow: hidden;
+    width: 210px;
+    height: 25px;
+    padding: 5px 45px;
+    font-family: "microsoft yahei", "宋体";
+    font-size: 14px;
+    line-height: 35px;
+    border: 1px solid #bdbdbd;
+    border-radius: 2px;
+  }
+  
+  #login input:focus,
+  #login .login_name:focus,
+  #login .login_paw:focus {
+    border-color: #3AA2E4;
+  }
+  
+  #login input[type='submit'] {
+    display: block;
+    width: 302px;
+    height: 37px;
+    margin: 20px auto 0;
+    font: 200 18px '微软雅黑';
+    cursor: pointer;
+    border: none;
+    background: #2873ff;
+    color: #FFF;
+    border-radius: 3px;
+  }
+  
+  #login input[type='submit']:hover {
+    font-size: 18px;
+    color: red;
+    cursor: pointer;
+  }
+  
+  #login .login_links span {
+    display: inline-block;
+    height: 28px;
+    font: 14px/28px 'Microsoft YaHei';
+  }
+  
+  #login .login_links a :hover {
+    color: red;
+  }
+  
+  .tipS {
+    float: left;
+  }
+  
+  #login .backcontent {
+    width: 302px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  #login .backcontent p {
+    margin-bottom: 15px;
+    font: 200 14px '微软雅黑';
+  }
+  
+  
+  .link_text a {
+    padding: 5px 22px 5px 0;
+    line-height: 25px;
+  }
+  
+  
+  h2 {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+  }
+  
+  input {
+    outline: medium none;
+  }
+  
+  
+  body {
+    color: #333;
+    font-family: "微软雅黑", "宋体", Arial, sans-serif;
+    font-size: 13px;
+  }

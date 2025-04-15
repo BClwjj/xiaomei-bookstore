@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小美的书店</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/template.css">
+    <script type="text/javascript" src="./js/banner.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav #today {
+            /* display: inline-block; */
+            position: relative;
+            cursor: pointer;
+        }
+
+        #nav #today #skin {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin-left: -200px;
+            width: 770px;
+            padding: 10px;
+            z-index: 1000;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px #ccc;
+        }
+
+        #nav #today:hover #skin {
+            display: block;
+            padding: 5px 10px;
+        }
+
+        #nav #today #skin ul {
+            margin-left: 20px;
+        }
+
+        #nav #today #skin li {
+            float: left;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #nav #today #skin img {
+            width: 150px;
+            height: 100px;
+            transition: all 0.3s ease;
+            /* 添加过渡效果，使变化更平滑 */
+        }
+
+        #nav #today #skin img:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border: 1px solid white;
+        }
+
+        /* 定义不同的皮肤样式 */
+        .ba {
+            background-color: #f7f7f6
+        }
+
+        .bb {
+            background-image: url('./images/background1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .bc {
+            background-image: url('./images/background2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .bd {
+            background-image: url('./images/background3.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .be {
+            background-image: url('./images/background4.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dbox">
+        <!--头部-->
+        <header id="header">
+            <div class="header_top">
+                <div class="header_top_left">您好！欢迎来到小美的书店 [<a href="./html/login.html" target="_parent">登录</a> |
+                    <a href="./html/register.html" target="_parent">免费注册</a>]
+                </div>
+                <div class="header_top_right">
+                    <ul>
+                        <li><a href="#" target="_self">客户服务</a></li>
+                        <li>|</li>
+                        <li id="menu"><a href="#" target="_self">新手入门</a> <img src="./images/arrow_down.gif"
+                                alt="arrow" />
+                            <div id="dd_menu_top_down">
+                                <a href="#" target="_self">购物保障</a><br />
+                                <a href="#" target="_self">购物流程</a><br />
+                                <a href="#" target="_self">会员介绍</a><br />
+                                <a href="#" target="_self">常见问题</a><br />
+                            </div>
+                        </li>
+                        <li>|</li>
+                        <li><a href="#" target="_self">礼品卡</a></li>
+                        <li>|</li>
+                        <li><a href="./html/sales.html" target="_self">我的订单</a></li>
+                        <li>|</li>
+                        <li><a href="./html/myook.html" target="_self">我的账户</a></li>
+                        <li>|</li>
+                        <li><a href="./html/shopping.html" target="_parent">购物车</a></li>
+                        <li><img src="./images/header_shop.gif" alt="shopping" /></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- 搜索模块 -->
+        <div class="header_middle">
+            <div class="logo">
+                <img src="./images/logo.png" alt="" style="width: 150px;height: 47px;">
+            </div>
+            <div class="search"><input type="text" placeholder="请输入搜索关键字">&nbsp;&nbsp;
+                <button class="searchBtn"><a href="./html/product.html" class="btn">搜索</a></button>
+            </div>
+        </div>
+        <!-- nav模块 -->
+        <nav id="nav">
+            <ul>
+                <li><a href="./index.html" style="background-color: cornflowerblue;"> 全部商品分类</a></li>&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                <li><a href="./index.html"> 首页</a></li>
+                <li><a href="./html/product.html"> 图书</a></li>
+                <li id="today">
+                    <a href="#"> 换肤中心</a>
+                    <div id="skin">
+                        <ul> 
+                            <li id="an1">
+                                <img src="./images/backg5.jpg" alt="" />
+                            </li>
+                            <li id="an2">
+                                <img src="./images/background1.jpg" alt="" />
+                            </li>
+                            <li id="an3">
+                                <img src="./images/background2.jpg" alt="" /> 
+                            </li>
+                            <li id="an4">
+                                <img src="./images/background3.jpg" alt="" />
+                            </li>
+                            <li id="an5">
+                                <img src="./images/background4.jpg" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <script src="./js/skin.js"></script>
+                <li><a href="./html/talking.html"> 我的信息</a></li>
+                <li><a href="./html/sales.html"> 查看订单</a></li>
+                <li><a href="./html/pingjia.html"> 评价中心</a></li>
+            </ul>
+        </nav>
+        <div id="bag">
+            <div class="content-box">
+                <!-- 分类开始 -->
+                <div class="content-right">
+                    <div class="cagetory-box">
+                        <div class="list-group">
+                            <div class="list-group-item item-header" init-detail="wait">
+                                <a class="title pull-left">图书</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a class="label pull-right" target="_blank">最新上书</a>
+                            </div>
+                            <div class="list-group-item item-remarkable" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">线装古籍</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">民国旧书</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">期刊</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">报纸</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">外文古旧书</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">国学古籍</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">收藏鉴赏</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">小说</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">文学</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">语言文字</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">历史</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">地理</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">艺术</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">政治</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">法律</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">军事</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">哲学</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">心理</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">宗教</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">经济</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">社科</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">综合</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">童书</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">生活</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">体育</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">工程技术</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">互联网</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">自然科学</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">医药卫生</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">教材 / 教辅 / 考试</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">红色文献</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">签名本</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group other">
+                            <div class="list-group-item item-header">
+                                <a class="title pull-left">艺术品与收藏</a>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">名人墨迹 </a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">名人字画</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">古旧地图</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">照片影像</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">连环画</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">版画宣传画</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">邮票税票</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">钱币</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">碑帖</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">印谱</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">文房雅玩</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">玉石金银木器</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">漆器</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">陶器瓷器</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">工艺品</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">红色文献</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">收藏杂项</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group">
+                            <div class="list-group-item item-header">
+                                <a class="title pull-left">文创与周边</a>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">笔墨</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">纸本</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">卡片</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">日历</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">包袋</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">壳套</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">器皿</a>
+                                        <span class="split-line">/</span>
+                                        <a class="item-title" target="_blank">摆件挂画</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                            <div class="list-group-item" init-detail="wait">
+                                <div class="item-text">
+                                    <div class="text">
+                                        <a class="item-title" target="_blank">动漫影视周边</a>
+                                    </div>
+                                    <div class="ico icon-you iconfont"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- banner模块 -->
+                <div class="content-right">
+                    <!--banner开始-->
+                    <div class="banner">
+                        <ul class="banner_pic" id="banner_pic">
+                            <li class="current"><img class="one" src="./images/banner1.jpg" alt=""></li>
+                            <li class="pic"><img class="one" src="./images/banner2.jpg" alt=""></li>
+                            <li class="pic"><img class="one" src="./images/banner3.jpg" alt=""></li>
+                            <li class="pic"><img class="one" src="./images/banner4.jpg" alt=""></li>
+                        </ul>
+                        <ol id="button">
+                            <li class="current"></li>
+                            <li class="but"></li>
+                            <li class="but"></li>
+                            <li class="but"></li>
+                        </ol>
+                        <script src="./js/banner.js"></script>
+                    </div>
+                    <!--好书推荐-->
+                    <div class="book">
+                        <h1>好书推荐</h1>
+                        <ul>
+                            <li>
+                                <div>
+                                    <div><img src="./images/tuijian1.jpg" alt=""></div>
+                                    <div class="img-a"> <a target="_blank">茶业战争：中国与印度的一段资本主义史</a></div>
+                                    <div title="【美】刘仁威" class="bookstyle">【美】刘仁威</div>
+                                    <div class="price">
+                                        <i><span style="font-size:14px;color: #bf7f5f; margin-left: 10px;">￥
+                                                52.10</span></i>
+                                        <span class="bookstyle">起</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div><br>
+                                    <div><img src="./images/tuijian3.jpg" alt=""></div>
+                                    <div class="img-a"> <a target="_blank">花之语：英国古典版画里的花草秘事</a></div>
+                                    <div title="【美】刘仁威" class="bookstyle">崔莹</div>
+                                    <div class="price">
+                                        <i><span style="font-size:14px;color: #bf7f5f; margin-left: 10px;">￥
+                                                50.25</span></i>
+                                        <span class="bookstyle">起</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div><br>
+                                    <div><img src="./images/tuijian2.jpg" alt=""></div>
+                                    <div class="img-a"> <a target="_blank">拓地降敌：北宋中叶内臣名将李宪研究</a></div>
+                                    <div title="【美】刘仁威" class="bookstyle">何冠环</div>
+                                    <div class="price">
+                                        <i><span style="font-size:14px;color: #bf7f5f; margin-left: 10px;">￥
+                                                51.60</span></i>
+                                        <span class="bookstyle">起</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div><br>
+                                    <div><img src="./images/tuijian4.jpg" alt=""></div>
+                                    <div class="img-a"> <a target="_blank">生育笔记：产科医生的真实故事集</a></div>
+                                    <div title="【美】刘仁威" class="bookstyle">【美】查维·伊芙·</div>
+                                    <div class="price">
+                                        <i><span style="font-size:14px;color: #bf7f5f; margin-left: 10px;">￥
+                                                29.90</span></i>
+                                        <span class="bookstyle">起</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div><br>
+                                    <div><img src="./images/tuijian6.jpg" alt=""></div>
+                                    <div class="img-a"> <a target="_blank">从昨日醒来 : 帕蒂·史密斯的影像日记</a></div>
+                                    <div title="【美】刘仁威" class="bookstyle">[美]帕蒂·史密斯</div>
+                                    <div class="price">
+                                        <i><span style="font-size:14px;color: #bf7f5f; margin-left: 10px;">￥
+                                                78.60</span></i>
+                                        <span class="bookstyle">起</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div><br>
+                                    <div><img src="./images/tuijian7.jpg" alt=""></div>
+                                    <div class="img-a"> <a target="_blank">我在上东区做家教 （《我是个妈妈，</a></div>
+                                    <div title="【美】刘仁威" class="bookstyle">【美】布莱斯·格</div>
+                                    <div class="price">
+                                        <i><span style="font-size:14px;color: #bf7f5f; margin-left: 10px;">￥
+                                                30.16</span></i>
+                                        <span class="bookstyle">起</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div><br>
+                                    <div><img src="./images/tuijian5.jpg" alt=""></div>
+                                    <div class="img-a"> <a target="_blank">鲤·严肃点！文学（《鲤》十五周</a></div>
+                                    <div title="【美】刘仁威" class="bookstyle">张悦然 主编</div>
+                                    <div class="price">
+                                        <i><span style="font-size:14px;color: #bf7f5f; margin-left: 10px;">￥
+                                                38.36</span></i>
+                                        <span class="bookstyle">起</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div><br>
+                                    <div><img src="./images/tuijian8.jpg" alt=""></div>
+                                    <div class="img-a"> <a target="_blank">世上为什么要有图书馆</a></div>
+                                    <div title="【美】刘仁威" class="bookstyle">杨素秋</div>
+                                    <div class="price">
+                                        <i><span style="font-size:14px;color: #bf7f5f; margin-left: 10px;">￥
+                                                29.1</span></i>
+                                        <span class="bookstyle">起</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div><br>
+                                    <div><img src="./images/tuijian9.jpg" alt=""></div>
+                                    <div class="img-a"> <a target="_blank">都柏林文学四杰（《鲤》十五周</a></div>
+                                    <div title="【美】刘仁威" class="bookstyle">【美】 理查德·艾</div>
+                                    <div class="price">
+                                        <i><span style="font-size:14px;color: #bf7f5f; margin-left: 10px;">￥
+                                                35.26</span></i>
+                                        <span class="bookstyle">起</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div><br>
+                                    <div><img src="./images/tuijian10.jpg" alt=""></div>
+                                    <div class="img-a"> <a target="_blank">我们遗忘的一切：重走父亲逃亡之路</a></div>
+                                    <div title="【美】刘仁威" class="bookstyle">[德]克里斯蒂安娜˙</div>
+                                    <div class="price">
+                                        <i><span style="font-size:14px;color: #bf7f5f; margin-left: 10px;">￥
+                                                325.56</span></i>
+                                        <span class="bookstyle">起</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div><br>
+                                    <div><img src="./images/tuijian11.jpg" alt=""></div>
+                                    <div class="img-a"> <a target="_blank">法律的悖论（罗翔2023普法新作</a></div>
+                                    <div title="【美】刘仁威" class="bookstyle">罗翔</div>
+                                    <div class="price">
+                                        <i><span style="font-size:14px;color: #bf7f5f; margin-left: 10px;">￥
+                                                18.00</span></i>
+                                        <span class="bookstyle">起</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div><br>
+                                    <div><img src="./images/tuijian12.png" alt=""></div>
+                                    <div class="img-a"> <a target="_blank">没有面目的人</a></div>
+                                    <div title="【美】刘仁威" class="bookstyle">理查德·桑内特</div><br>
+                                    <div class="price">
+                                        <i><span style="font-size:14px;color: #bf7f5f; margin-left: 10px;">￥
+                                                36.36</span></i>
+                                        <span class="bookstyle">起</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- 秒杀模块 -->
+                <div class="seckill-wrapper">
+                    <div class="countdown-box">
+                        <div><img src="./images/限时秒杀(1).png" alt="秒杀" style="width: 215px; height: 180px;"></div><br>
+                        <div style="font-weight: bold; font-size: 16px;">12点场</div><br>
+                        <div class="countdown-box-time">
+                            <div id="d"></div>
+                            <div class="fenhao">:</div>
+                            <div id="h"></div>
+                            <div class="fenhao">:</div>
+                            <div id="m"></div>
+                            <div class="fenhao">:</div>
+                            <div id="s"></div>
+                        </div>
+                    </div>
+                    <div id="item-box" style="margin-right: 5px;">
+                        <div>
+                            <img src="./images/miaosha1.png" alt="" id="item-img">
+                        </div>
+                        <div id="item-word">
+                            <strong style="font-size: 16px;margin: 5px;">限量布面精装毛边本 · 台湾弘扬图书版·傅</strong>
+                            <p>史学大家傅斯年之侄，台湾著名史学家傅乐成。本书定价新台币650元</p><br>
+                            <hr><span id="item-price">￥180</span>
+                            <div id="item-name"><a href="#">立即抢购</a></div>
+                        </div>
+                    </div>
+                    <div id="item-box" style="margin-right: 5px;">
+                        <div>
+                            <img src="./images/miaosha2.png" alt="" id="item-img">
+                        </div>
+                        <div id="item-word">
+                            <strong style="font-size: 16px;margin: 5px;">扬之水钤印+限量精装毛边本·《物中看画</strong>
+                            <p>通过缜密的分析，考证人物身份及图像样式，呈现古代中国士人的生活场景。</p><br>
+                            <hr><span id="item-price">￥146</span>
+                            <div id="item-name"><a href="#">立即抢购</a></div>
+                        </div>
+                    </div>
+                    <div id="item-box">
+                        <div>
+                            <img src="./images/miaosha3.png" alt="" id="item-img">
+                        </div>
+                        <div id="item-word">
+                            <strong style="font-size: 16px;margin: 5px;">韩少功签名+钤印+限量布面精装毛边本台</strong>
+                            <p>首屆恢復高考招生，一千萬適齡、大齡青年湧入時代的十字路口，風雲際會的年代。本书定价新台币580</p><br>
+                            <hr><span  id="item-price">￥160</span>
+                            <div id="item-name"><a href="#">立即抢购</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="./js/seckill.js"></script>
+        </div>
+        <!-- 页尾版权 -->
+        <footer id="footer">
+            <div class="footer_top"><a href="#" target="_parent" class="footer_dull_red">正版保障</a> |
+                <a href="#" target="_parent" class="footer_dull_red">满额免运</a> |
+                <a href="#" target="_parent" class="footer_dull_red">货到付款</a> |
+                <a href="#" target="_parent" class="footer_dull_red">品种最全</a> |
+                <a href="#" target="_parent" class="footer_dull_red">免费退换</a>
+            </div>
+            <div class="footer_end">
+                版权所有&copy;广东科技学院2022级软件工程专业小美&nbsp;&nbsp;
+                联系电话：12345678　邮箱：3289824220@qq.com
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

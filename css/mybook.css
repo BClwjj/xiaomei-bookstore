@@ -1,0 +1,248 @@
+
+.userCenter-side-nav{
+	width:153px;
+	/* height: 100%; */
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.helpCenter-side-nav{
+	width:151px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	border-right:3px solid #f5f5f5;		
+	background: #fff;
+}
+h1.blue{
+	
+	padding-left: 47px;
+	height: 30px;
+	line-height: 30px;
+	width:103px;
+	color:#fff;
+}
+ul.first{
+    width: 149px;
+	border-bottom: 1px solid #e6e6e6;
+	zoom:1;
+}
+ul.first li a{
+	color: #333333;
+}
+ul.second li{
+	height: 22px;
+	line-height: 22px;
+	vertical-align:text-bottom;
+}
+ul.first li h2{
+	height: 23px;
+	line-height: 23px;
+	border-bottom: 1px solid #e6e6e6;
+	border-top: 1px solid #e6e6e6;
+	padding-left:30px; 
+
+}
+ul.second{
+	padding: 5px 0 7px 45px; 
+	zoom:1;
+}
+ul.otherDistance{
+	margin-bottom: 24px;
+}
+.container{
+	/* padding-top: 0; */
+	padding: 10px;
+	background-color: #ffffff;
+	margin: 0 auto;
+}
+.user-content{
+	position: relative;
+	min-height: 800px;
+	_height: 800px;
+	padding-left: 160px;
+	zoom: 1;
+}
+p.notice{
+	margin-bottom: 19px;
+}
+p.notice span{
+	color: #616161;
+}
+.userCenter-content{
+	height: 100%;
+}
+.mt5{
+    margin-top: 5px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt12{
+    margin-top: 12px;
+}
+.mt17{
+    margin-top: 17px;
+}
+.mt20{
+    margin-top: 20px;
+}
+/*__usercnter-index
+--------------------------------------------------------------------------------------------*/
+.userCenter-content .personalResources{
+	height: 239px;
+	background:#fffce1;
+	border-right: #fcf9f0 1px solid;
+	border-top: #fcf9f0 1px solid;
+	border-bottom:#f8c38f 1px solid;
+	box-shadow: 0px 8px 0px #f8f8f8, 0 0 8px #f8f8f8;
+	position: relative;
+    zoom: 1;
+	margin-bottom: 23px;
+	padding-bottom: 33px;
+}
+.userCenter-content img.personImg{
+	width:101px;
+	height: 101px;
+	border: 1px solid #ece5dd;
+	position: absolute;
+	top:28px;
+	left:39px;
+}
+.userCenter-content img.vipimg{
+	position: absolute;
+	top:136px;
+	left:78px;
+}
+.userCenter-content .personalResources-right{
+	position: absolute;
+	top:22px;
+	left:171px;
+}
+.userCenter-content .personalResources-right h1{
+	font-size: 16px;
+	padding-left: 7px;
+	font-family: "微软雅黑";
+	}
+
+.userCenter-content .personalResources-right h1 a{
+	color: #0e70c9;
+	font-size: 12px;
+	font-family: "新宋体";
+	font-weight: normal;
+}
+.userCenter-content .personalResources-right h1 span{
+color: #0e70c9;
+}
+.userCenter-content .personalResources-right p{
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+    zoom: 1;
+	padding-left: 7px;
+}
+.userCenter-content .personalResources-right img.question{
+	position: absolute;
+	top:20px;
+	left:111px;
+}
+/* .userCenter-content .personalResources-right p span.question{
+/* 	background: url("../../img/mall/userCenter/question.jpg") 0px center no-repeat; */
+
+.red{
+	color:#d40000;
+}
+.blue,.blue a{
+	color:#136ec2;
+	font-weight: bold;
+}
+span .blue{
+	color: #333039;
+}
+.userCenter-content .personalResources-right p.line{
+	width:590px;
+	height: 25px;
+	border-bottom: 1px solid #ede6dc;
+}
+.userCenter-content .personalResources-right table{
+	width: 400px;
+	margin-top: 20px;
+}
+.userCenter-content .personalResources-right table tr{
+	height: 30px;
+	line-height: 30px;
+}
+h1.title{
+border-bottom:#196bc1 3px solid;
+font-size: 14px;
+line-height: 23px;
+height:23px;
+padding-left: 11px;
+margin-bottom: 5px;
+}
+h1.blue-line{
+	border-bottom:3px solid #136ec2;
+	font-size: 14px;
+	line-height: 27px;
+	height:27px;
+	padding-left: 21px;
+}
+.fontWeight6{
+	font-weight: 600;
+}
+.likebook-list li{
+   float: left;
+    height: 240px;
+    text-align: center;
+    width: 140px;
+    margin-right: 18px;
+}
+.bottomLine{
+	border-bottom: 1px #f4f4f4 solid;
+}
+.likebook-list{
+	padding-top: 26px;
+	padding-left: 15px;
+}
+.likebook-list li{
+	width: 142px;
+}
+.likebook-list li img{
+	width: 95px;
+	height: 130px;	
+}
+.likebook-list li a.grey-line{
+	display: block;
+	width: 140px;
+	height: 132px;
+	border: #e7e7e7 1px solid;	
+	padding-top: 8px;
+}
+.likebook-list ul{
+	margin-left: 4px;
+}
+.likebook-list li .book-intro{
+  color: #1f6eb3;
+  display: block;
+  height: 38px;
+  width: 140px;
+  overflow: hidden;    
+  text-align: center;
+}
+
+.likebook-list .price{
+	color: #d6000a;
+	font-size: 14px;
+	font-weight: 600;
+}
+.likebook-list del{
+	color:#686868;
+	font-size: 12px;
+	font-weight: normal;
+}
+.likebook-list li.greyline{
+	border-bottom: 1px solid #f5f5f5;
+}
+a.black{
+	color: #000;
+}
