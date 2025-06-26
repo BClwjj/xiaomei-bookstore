@@ -1,6 +1,6 @@
 # 📚 小美书店 - 在线图书商城
 
-🌐 立即体验：(https://vue-weather-app-weld-one.vercel.app)
+🌐 立即体验：(https://xiaomei-bookstore.vercel.app)
 
 ## 🚀 项目简介
 一个基于原生 **HTML5/CSS3/JavaScript** 开发的电子商务网站，实现完整的图书浏览、购物车管理和用户交互功能。
