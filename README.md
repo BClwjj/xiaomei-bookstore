@@ -2,7 +2,7 @@
 
 ## 🌐 在线预览
 
-[直接查看首页](https://xiaomei-bookstore.vercel.app)  
+[在线预览](https://xiaomei-bookstore.vercel.app)  
 
 ![网站截图](./images/首页.png)
 ## 🚀 项目简介
